@@ -3,3 +3,24 @@
     min-height: 700px;
 }
 
+.form-control[type=text]{width:730px !important;} {
+    
+}
+
+.agent-name{
+    align-items: left;
+}
+
+.agent-intro {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    width: 60%;
+    position: relative;
+}
+
+.agent-contact-card-wrapper {
+    float: right;
+    
+}
+
+ 

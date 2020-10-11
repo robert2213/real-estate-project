@@ -2,12 +2,19 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="real estate.css">
     <title>Julie Norris</title>
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark default-color">
       <a class="navbar-brand" href="#">Jule Norris</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -23,51 +30,52 @@
         </div>
       </div>
     </nav>
-    <section class="jumbotron-header">
-      <div class="jumbotron card card-image" style="background-image: url(https://images.unsplash.com/photo-1584385971010-71c147ba5dbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1936&q=80);">
-        <div class="text-white text-center py-5 px-4">
-          <div>
-            <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>Create your beautiful website with MDBootstrap</strong></h2>
-            <p class="mx-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
-              optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos. Odit sed qui, dolorum!
-            </p>
-            <a class="btn btn-outline-white btn-md"><i class="fas fa-clone left"></i> View project</a>
+    <!--Jumbotron-->
+      <section class="jumbotron-header">
+        <div class="jumbotron card card-image" style="background-image: url(https://images.unsplash.com/photo-1584385971010-71c147ba5dbd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1936&q=80);">
+          <div class="text-white text-center py-5 px-4">
+            <div>
+              <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>Create your beautiful website with MDBootstrap</strong></h2>
+              <p class="mx-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
+                optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos. Odit sed qui, dolorum!
+              </p>
+              <a class="btn btn-outline-white btn-md"><i class="fas fa-clone left"></i> View project</a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
+<!--Agent Info-->
   <section class="agent-intro-section">
-    <div class="container">
+    <div class="container flex mt-5 mb-5">
       <div class="row">
-        <div class="home-search">
-          <button class="btn btn-info dropdown-toggle mr-4" type="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">Basic dropdown</button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div> 
-          <div class="search-bar">
-            <div class="md-form active-cyan active-cyan-2 mb-3">
-              <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-            </div>
-            <div class="search-button">
-              <button type="button" class="btn btn-info">Elegant</button>
+        <div class="home-search d-flex flex-row">
+          <div class="category-button">
+              <button class="btn aqua-gradient  dropdown-toggle mr-4" type="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Rent/Sale</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">For Rent</a>
+                <a class="dropdown-item" href="#">For Sale</a>
+              </div> 
+          </div>
+          <div class="search-bar d-flex flex-row align-items-center">
+            <div class="home-search-bar">
+              <form class="form-inline mr-auto" id="formSearchBar">
+                <i class="fas fa-search"></i>
+                <input class="form-control mr-sm-2" type="text" placeholder="Search by City, Neighborhood, and Listing ID" aria-label="Search">
+                <button class="btn aqua-gradient  btn-lg my-0" type="submit">Search</button>
+              </form>
             </div>
           </div>
         </div>
      </div>
    </div>
-
    <div class="container">
      <div class="row">
        <div class="agent-info">
          <div class="agent-info-container">
            <div class="agent-name">
-             <h1 class="agent-name-intro">
+             <h1 class="agent-name-intro mb-4">
                Julie Norris | Broker Associate Realtor
              </h1>
              <div class="agent-intro">
@@ -86,7 +94,7 @@
              <div class="agent-photo-container">
                <div class="agent-photo">
                  <a href="#">
-                   <img src="https://b386363e680359b5cc19-97ec1140354919029c7985d2568f0e82.ssl.cf1.rackcdn.com/assets/uploads/agent/photo/66560/large_13caea534ad6020fc8305d2334fc4646.jpg">
+                   <img class="realtor-photo" src="https://b386363e680359b5cc19-97ec1140354919029c7985d2568f0e82.ssl.cf1.rackcdn.com/assets/uploads/agent/photo/66560/large_13caea534ad6020fc8305d2334fc4646.jpg">
                  </a>
                </div>
              </div>
@@ -127,398 +135,405 @@
    </div>
   </section>
 
-  <section class="listing">
-    <!--Carousel Wrapper-->
-<div id="listing-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-  <!--Indicators-->
-  <ol class="carousel-indicators">
-    <li data-target="#listing-carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#listing-carousel" data-slide-to="1"></li>
-    <li data-target="#listing-carousel" data-slide-to="2"></li>
-  </ol>
-  <!--/.Indicators-->
-  <!--Slides-->
-  <div class="carousel-inner" role="listbox">
-    <div class="carousel-item active">
-      <div class="view">
-        <img class="d-block w-100" src="https://17f973821e7118730426-108dc1607dcf25daca5d1e8636787ebd.ssl.cf1.rackcdn.com/properties/photos/a2354e1ae3eb918fb46d97bd98167939.jpg"
-          alt="First slide">
-        <div class="mask rgba-black-light"></div>
-      </div>
-      <div class="carousel-caption">
-        <h2 class="h3-responsive">10370 AURORA COURT</h2>
-        <h3 class="h3-responsive">FISHERS, IN 46038</h3>
-        <p>$394,000</p>
-      </div>
+  <!--Listing-->
+    <section class="listing">
+        <!--Carousel Wrapper-->
+    <div id="listing-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#listing-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#listing-carousel" data-slide-to="1"></li>
+        <li data-target="#listing-carousel" data-slide-to="2"></li>
+      </ol>
+      <!--/.Indicators-->
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="view">
+            <img class="d-block w-100" src="https://17f973821e7118730426-108dc1607dcf25daca5d1e8636787ebd.ssl.cf1.rackcdn.com/properties/photos/a2354e1ae3eb918fb46d97bd98167939.jpg"
+              alt="First slide">
+            <div class="mask rgba-black-light"></div>
+          </div>
+          <div class="carousel-caption">
+            <h2 class="h3-responsive">10370 AURORA COURT</h2>
+            <h3 class="h3-responsive">FISHERS, IN 46038</h3>
+            <p>$394,000</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!--Mask color-->
+          <div class="view">
+            <img class="d-block w-100" src="https://17f973821e7118730426-108dc1607dcf25daca5d1e8636787ebd.ssl.cf1.rackcdn.com/properties/photos/f93500e1fcd5d5ee0f63168b72d27d3d.jpg"
+              alt="Second slide">
+            <div class="mask rgba-black-strong"></div>
+          </div>
+          <div class="carousel-caption">
+            <h2 class="h3-responsive">1583 HAZELWOOD COURT W, #117</h2>
+            <h3 class="h3-responsive">GREENWOOD, IN 46143</h3>
+            <p>$478,000</p>
+          </div>
+        </div>
+      <!--/.Slides-->
+      <!--Controls-->
+      <a class="carousel-control-prev" href="#listing-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#listing-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <!--/.Controls-->
     </div>
-    <div class="carousel-item">
-      <!--Mask color-->
-      <div class="view">
-        <img class="d-block w-100" src="https://17f973821e7118730426-108dc1607dcf25daca5d1e8636787ebd.ssl.cf1.rackcdn.com/properties/photos/f93500e1fcd5d5ee0f63168b72d27d3d.jpg"
-          alt="Second slide">
-        <div class="mask rgba-black-strong"></div>
-      </div>
-      <div class="carousel-caption">
-        <h2 class="h3-responsive">1583 HAZELWOOD COURT W, #117</h2>
-        <h3 class="h3-responsive">GREENWOOD, IN 46143</h3>
-        <p>$478,000</p>
-      </div>
+    <!--/.Carousel Wrapper-->
     </div>
-  <!--/.Slides-->
-  <!--Controls-->
-  <a class="carousel-control-prev" href="#listing-carousel" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#listing-carousel" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-  <!--/.Controls-->
-</div>
-<!--/.Carousel Wrapper-->
-</div>
-<div class="testimonial-carousel">
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-          <div class="carousel-item active">
-            <h4>"Julie was very accommodating through our entire buying process. Always willing to go the extra mile (literally) to help us with our purchase. Highly recommended."</h4>
-            <h5>Don & Lisa Finch, 1692 Dorrell Court</h5>
+    <div class="testimonial-carousel">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h4>"Julie was very accommodating through our entire buying process. Always willing to go the extra mile (literally) to help us with our purchase. Highly recommended."</h4>
+                <h5>Don & Lisa Finch, 1692 Dorrell Court</h5>
+              </div>
+              <div class="carousel-item">
+                <h4>"Julie, I can’t thank you enough for the tremendous amount of Good you have brought to me. My heart overflows with Love and thankfulness for you. Everything went so well this morning and the money is already in my account.  Now my wish for you is that you receive back to yourself 100 fold all the Good you so freely give to others.    So much Love for you, "
+                </h4>
+                <h5>Anonymous</h5>
+              </div>
+              <div class="carousel-item">
+                <h4>"We were amazed with Julie's promptness, attention to detail, and most importantly her caring. We had 1 month to find a new home and within 2 days, we had showings set up, and within a week we were able to find the one we wanted, and work out all the details and move in with 2 weeks to spare. Without Julie's help and understanding, we don't know what we would have done. Julie went above and beyond and definitely made the entire process less stressful. She will be the first one we go to when we are in the hunt for our forever home. Thanks Julie!"
+                </h4>
+                <h5>Amy and Jason Russo, 10341 Glenn Abbey Lane, Fishers, IN</h5>
+              </div>
           </div>
-          <div class="carousel-item">
-            <h4>"Julie, I can’t thank you enough for the tremendous amount of Good you have brought to me. My heart overflows with Love and thankfulness for you. Everything went so well this morning and the money is already in my account.  Now my wish for you is that you receive back to yourself 100 fold all the Good you so freely give to others.    So much Love for you, "
-            </h4>
-            <h5>Anonymous</h5>
-          </div>
-          <div class="carousel-item">
-            <h4>"We were amazed with Julie's promptness, attention to detail, and most importantly her caring. We had 1 month to find a new home and within 2 days, we had showings set up, and within a week we were able to find the one we wanted, and work out all the details and move in with 2 weeks to spare. Without Julie's help and understanding, we don't know what we would have done. Julie went above and beyond and definitely made the entire process less stressful. She will be the first one we go to when we are in the hunt for our forever home. Thanks Julie!"
-            </h4>
-            <h5>Amy and Jason Russo, 10341 Glenn Abbey Lane, Fishers, IN</h5>
-          </div>
-      </div>
-    <div class="add-testimonial">
-      <form>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Name</label>
-          <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Address:</label>
-          <input type="address" class="form-control" id="exampleFormControlInput1" placeholder="123 Abc Lane">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Testimonial</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
-        </div>
-        <div class="form-button">
-          <button class="btn btn-primary">
-            Submit
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
-  </section >
-  <section class="search-homes">
-    <div class="container">
-      <div class="row">
-        <div class="search-homes-title">
-          <h1 class="search-homes-header">Search Homes</h1>
-        </div>
-        <div class="search-form">
-          <div class="sort-options">
-            <button class="btn btn-primary dropdown-toggle mr-4" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort Options</button>
-             <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Newest First</a>
-                <a class="dropdown-item" href="#">Price: High-to-Low</a>
-                <a class="dropdown-item" href="#">Price: Low-to-High</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
-             </div>
-        </div>
-        <div class="radius-search">
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-              Default radio
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-            <label class="form-check-label" for="exampleRadios2">
-              Second default radio
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
-            <label class="form-check-label" for="exampleRadios3">
-              Disabled radio
-            </label>
-          </div>
-        </div>
-        <div class="search-textbox">
+        <div class="add-testimonial">
           <form>
             <div class="form-group">
-              <label for="exampleFormControlInput1">Search By Address, City, Zip, or MLS #</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              <label for="exampleFormControlInput1">Name</label>
+              <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
             </div>
-           </form>
-        </div>
-        <div class="bedrooms-range-selector">
-          <form>
             <div class="form-group">
-              <label for="formControlRange">Bedrooms:</label>
-              <input type="range" class="form-control-range" id="formControlRange">
+              <label for="exampleFormControlInput1">Address:</label>
+              <input type="address" class="form-control" id="exampleFormControlInput1" placeholder="123 Abc Lane">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Testimonial</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+            </div>
+            <div class="form-button">
+              <button class="btn btn-primary">
+                Submit
+              </button>
             </div>
           </form>
         </div>
-        <div class="bathrooms-selector">
-          <form>
-            <div class="form-group">
-              <label for="formControlRange">Min. Baths:</label>
-              <input type="range" class="form-control-range" id="formControlRange">
-            </div>
-          </form>
-        </div>
-        <div class="min-price-input">
-          <label for="exampleForm2">Min Price:</label>
-          <input type="text" id="exampleForm2" class="form-control">
-        </div>
-        <div class="max-price-input">
-          <label for="exampleForm2">Max Price:</label>
-          <input type="text" id="exampleForm2" class="form-control">
-        </div>
-        <div class="mls-input">
-          <label for="exampleForm2">MLS # :</label>
-          <input type="text" id="exampleForm2" class="form-control">
-        </div>
-        <div class="open-houses-radio"> 
-          <h3>Open Houses:</h3>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-            <label class="form-check-label" for="inlineCheckbox1">1</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-            <label class="form-check-label" for="inlineCheckbox2">2</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-            <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
-          </div>
-        </div>
-        <div class="type-dropdown">
-          <button class="btn btn-primary dropdown-toggle mr-4" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Default Selected</button>
-             <div class="dropdown-menu">
-              <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-               </div>
-             </div>
-        </div>
-        <div class="default-selector">
-          <h3>Status :</h3>
-          <button class="btn btn-primary dropdown-toggle mr-4" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Default Selected</button>
-             <div class="dropdown-menu">
-              <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-                <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
-                <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
-        </div>
-        <div class="show-options-tag">
-          <h2>Show Advanced Options</h2>
-          <div class="show-options-button">
-            <button class="btn btn-success">
-              Search
-            </button>
-            <button class="btn btn-warning">
-              Reset Search
-            </button>
-          </div>
-        </div>
-        </div>
       </div>
     </div>
-  </section>
-  <section class="sold-listings">
-    <div class="container">
-      <div class="row">
-        <div class="card-">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="https://17f973821e7118730426-108dc1607dcf25daca5d1e8636787ebd.ssl.cf1.rackcdn.com/properties/photos/a6a88657393e2390244cd9b8978652cd.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">5935 Biron Way</p>
-              <p class="card-text">Indianapolis, IN 46254</p>
-              <p class="card-text">
-                $85,500
-                2 Beds/2 Total Baths/1,205 sq ft/Residential
-                MLS #: 21660936
-                Buyer's Agent: Julie Norris
-                Buyer's Agent's Office: Carpenter, REALTORS®
-              </p>
+    </section >
+
+  <!--Search Homes-->
+    <section class="search-homes">
+      <div class="container">
+        <div class="row">
+          <div class="search-homes-title">
+            <h1 class="search-homes-header">Search Homes</h1>
+          </div>
+          <div class="search-form">
+            <div class="sort-options">
+              <button class="btn btn-primary dropdown-toggle mr-4" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort Options</button>
+              <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Newest First</a>
+                  <a class="dropdown-item" href="#">Price: High-to-Low</a>
+                  <a class="dropdown-item" href="#">Price: Low-to-High</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+          </div>
+          <div class="radius-search">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Default radio
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Second default radio
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
+              <label class="form-check-label" for="exampleRadios3">
+                Disabled radio
+              </label>
             </div>
           </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="https://17f973821e7118730426-108dc1607dcf25daca5d1e8636787ebd.ssl.cf1.rackcdn.com/properties/photos/fcc63a9bcdbc3b40a3e29e7d48f3f348.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">1662 Dorrell Court</p>
-              <p class="card-text">Greenwood, IN 46143</p>
-              <p class="card-text">
-                $405,000
-                3 Beds/3 Total Baths/3,678 sq ft/Residential
-                MLS #: 21673218
-                Listing Agent: Julie Norris
-                Listing Office: Carpenter, REALTORS®
-              </p>
+          <div class="search-textbox">
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Search By Address, City, Zip, or MLS #</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+            </form>
+          </div>
+          <div class="bedrooms-range-selector">
+            <form>
+              <div class="form-group">
+                <label for="formControlRange">Bedrooms:</label>
+                <input type="range" class="form-control-range" id="formControlRange">
+              </div>
+            </form>
+          </div>
+          <div class="bathrooms-selector">
+            <form>
+              <div class="form-group">
+                <label for="formControlRange">Min. Baths:</label>
+                <input type="range" class="form-control-range" id="formControlRange">
+              </div>
+            </form>
+          </div>
+          <div class="min-price-input">
+            <label for="exampleForm2">Min Price:</label>
+            <input type="text" id="exampleForm2" class="form-control">
+          </div>
+          <div class="max-price-input">
+            <label for="exampleForm2">Max Price:</label>
+            <input type="text" id="exampleForm2" class="form-control">
+          </div>
+          <div class="mls-input">
+            <label for="exampleForm2">MLS # :</label>
+            <input type="text" id="exampleForm2" class="form-control">
+          </div>
+          <div class="open-houses-radio"> 
+            <h3>Open Houses:</h3>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">1</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">2</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+              <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
             </div>
           </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="https://17f973821e7118730426-108dc1607dcf25daca5d1e8636787ebd.ssl.cf1.rackcdn.com/properties/photos/71288685f750b7572cb6e23d507ed968.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">10341 Glenn Abbey Lane</p>
-              <p class="card-text">Fishers, IN 46037</p>
-              <p class="card-text">
-                $1,550
-                3 Beds/2 Total Baths/1,557 sq ft/Residential
-                MLS #: 21679081
-                Buyer's Agent: Julie Norris
-                Buyer's Agent's Office: Carpenter, REALTORS®
-              </p>
+          <div class="type-dropdown">
+            <button class="btn btn-primary dropdown-toggle mr-4" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Default Selected</button>
+              <div class="dropdown-menu">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                </div>
+              </div>
+          </div>
+          <div class="default-selector">
+            <h3>Status :</h3>
+            <button class="btn btn-primary dropdown-toggle mr-4" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Default Selected</button>
+              <div class="dropdown-menu">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+                  <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
+                  <label class="custom-control-label" for="defaultIndeterminate2">Default indeterminate</label>
+          </div>
+          <div class="show-options-tag">
+            <h2>Show Advanced Options</h2>
+            <div class="show-options-button">
+              <button class="btn btn-success">
+                Search
+              </button>
+              <button class="btn btn-warning">
+                Reset Search
+              </button>
             </div>
           </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="https://17f973821e7118730426-108dc1607dcf25daca5d1e8636787ebd.ssl.cf1.rackcdn.com/properties/photos/c2ec380afc92fee458f3446a1595e493.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">10998 Amelia Court</p>
-              <p>Noblesville, IN 46060</p>
-              <p>
-                $270,000
-                4 Beds/3 Total Baths/2,952 sq ft/Residential
-                MLS #: 21735992
-                Buyer's Agent: Julie Norris
-                Buyer's Agent's Office: Carpenter, REALTORS®
-              </p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="https://17f973821e7118730426-108dc1607dcf25daca5d1e8636787ebd.ssl.cf1.rackcdn.com/properties/photos/c9c1d01da7f0d68ccdc1818c0e8c41ef.jpg" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">1692 Dorrell Court, #57</p>
-              <p class="card-text">Greenwood, IN 46143</p>
-              <p>
-                $250,400
-                3 Beds/3 Total Baths/2,389 sq ft/Residential
-                MLS #: 21654624
-                Buyer's Agent: Julie Norris
-                Buyer's Agent's Office: Carpenter, REALTORS®
-              </p>
-            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="relocation-services">
-    <div class="container">
-      <div class="row">
-        <div class="relocation-info">
-          <h2>Relocating is a Big Deal. How Can I Help?</h2>
-          <h3>Welcome to the Carpenter Relocation Center</h3>
-          <h4>
-            For assistance in corporate or personal relocation, Carpenter Relocation Services is a comprehensive relocation center servicing transferring families and corporations. Whether you are moving across town or across the country, our team of dedicated Relocation Specialists will handle every need. Carpenter Relocation provides each client and family with a single, personal coordinator to assist from start to finish. 
-          </h4>
-          <ul>
-            <ol>Family Relocation</ol>
-            <ol>Corporate Relocation</ol>
-            <ol>The Relocation Team</ol>
-            <ol>Home Marketing Services</ol>
-            <ol>Destination Services</ol>
-            <ol>7 Steps to a Stress-Free Move</ol>
-            <ol>Moving Checklist</ol>
-            <ol>Relocation Request Form</ol>
-            <ol>Home Valuation</ol>
-          </ul>
-          <h3>
-            Call or email me today For more information
-          </h3>
+    </section>
+
+  <!--Sold Listings-->
+    <section class="sold-listings">
+      <div class="container">
+        <div class="row">
+          <div class="card-">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://17f973821e7118730426-108dc1607dcf25daca5d1e8636787ebd.ssl.cf1.rackcdn.com/properties/photos/a6a88657393e2390244cd9b8978652cd.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">5935 Biron Way</p>
+                <p class="card-text">Indianapolis, IN 46254</p>
+                <p class="card-text">
+                  $85,500
+                  2 Beds/2 Total Baths/1,205 sq ft/Residential
+                  MLS #: 21660936
+                  Buyer's Agent: Julie Norris
+                  Buyer's Agent's Office: Carpenter, REALTORS®
+                </p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://17f973821e7118730426-108dc1607dcf25daca5d1e8636787ebd.ssl.cf1.rackcdn.com/properties/photos/fcc63a9bcdbc3b40a3e29e7d48f3f348.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">1662 Dorrell Court</p>
+                <p class="card-text">Greenwood, IN 46143</p>
+                <p class="card-text">
+                  $405,000
+                  3 Beds/3 Total Baths/3,678 sq ft/Residential
+                  MLS #: 21673218
+                  Listing Agent: Julie Norris
+                  Listing Office: Carpenter, REALTORS®
+                </p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://17f973821e7118730426-108dc1607dcf25daca5d1e8636787ebd.ssl.cf1.rackcdn.com/properties/photos/71288685f750b7572cb6e23d507ed968.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">10341 Glenn Abbey Lane</p>
+                <p class="card-text">Fishers, IN 46037</p>
+                <p class="card-text">
+                  $1,550
+                  3 Beds/2 Total Baths/1,557 sq ft/Residential
+                  MLS #: 21679081
+                  Buyer's Agent: Julie Norris
+                  Buyer's Agent's Office: Carpenter, REALTORS®
+                </p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://17f973821e7118730426-108dc1607dcf25daca5d1e8636787ebd.ssl.cf1.rackcdn.com/properties/photos/c2ec380afc92fee458f3446a1595e493.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">10998 Amelia Court</p>
+                <p>Noblesville, IN 46060</p>
+                <p>
+                  $270,000
+                  4 Beds/3 Total Baths/2,952 sq ft/Residential
+                  MLS #: 21735992
+                  Buyer's Agent: Julie Norris
+                  Buyer's Agent's Office: Carpenter, REALTORS®
+                </p>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://17f973821e7118730426-108dc1607dcf25daca5d1e8636787ebd.ssl.cf1.rackcdn.com/properties/photos/c9c1d01da7f0d68ccdc1818c0e8c41ef.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">1692 Dorrell Court, #57</p>
+                <p class="card-text">Greenwood, IN 46143</p>
+                <p>
+                  $250,400
+                  3 Beds/3 Total Baths/2,389 sq ft/Residential
+                  MLS #: 21654624
+                  Buyer's Agent: Julie Norris
+                  Buyer's Agent's Office: Carpenter, REALTORS®
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+  <!--Relocation Services-->
+    <section class="relocation-services">
+      <div class="container">
+        <div class="row">
+          <div class="relocation-info">
+            <h2>Relocating is a Big Deal. How Can I Help?</h2>
+            <h3>Welcome to the Carpenter Relocation Center</h3>
+            <h4>
+              For assistance in corporate or personal relocation, Carpenter Relocation Services is a comprehensive relocation center servicing transferring families and corporations. Whether you are moving across town or across the country, our team of dedicated Relocation Specialists will handle every need. Carpenter Relocation provides each client and family with a single, personal coordinator to assist from start to finish. 
+            </h4>
+            <ul>
+              <ol>Family Relocation</ol>
+              <ol>Corporate Relocation</ol>
+              <ol>The Relocation Team</ol>
+              <ol>Home Marketing Services</ol>
+              <ol>Destination Services</ol>
+              <ol>7 Steps to a Stress-Free Move</ol>
+              <ol>Moving Checklist</ol>
+              <ol>Relocation Request Form</ol>
+              <ol>Home Valuation</ol>
+            </ul>
+            <h3>
+              Call or email me today For more information
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
   <footer class="footer">
     <!-- Footer -->
 <footer class="page-footer font-small blue pt-4">
@@ -533,8 +548,10 @@
       <div class="col-md-6 mt-md-0 mt-3">
 
         <!-- Content -->
-        <h5 class="text-uppercase">Footer Content</h5>
-        <p>Here you can use rows and columns to organize your footer content.</p>
+        <h5 class="text-uppercase">Contact Info:</h5>
+        <p class="text-uppercase">11475 Fishers Pointe Blvd. ,Fishers, IN 46038</p>
+        <p class="text-uppercase">Office: 317-841-7717</p>
+        <p class="text-uppercase">Email: jnorris@callcarpenter.com</p>
 
       </div>
       <!-- Grid column -->
@@ -545,50 +562,34 @@
       <div class="col-md-3 mb-md-0 mb-3">
 
         <!-- Links -->
-        <h5 class="text-uppercase">Links</h5>
+        <div class="footer-logo">
+          <img src="https://b386363e680359b5cc19-97ec1140354919029c7985d2568f0e82.ssl.cf1.rackcdn.com/assets/uploads/setting/company_footer_logo/21300/optimized_7d2001235ddaac8103629092e180a802.png">
+        </div>
+
+      </div>
+
+      <div>
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Link 1</a>
+            <a href="#!">Home</a>
           </li>
           <li>
-            <a href="#!">Link 2</a>
+            <a href="#!">About</a>
           </li>
           <li>
-            <a href="#!">Link 3</a>
+            <a href="#!">Testimonials</a>
           </li>
           <li>
-            <a href="#!">Link 4</a>
+            <a href="#!">Privacy Policy</a>
           </li>
         </ul>
 
-      </div>
+
+       
       <!-- Grid column -->
 
       <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-
-        <!-- Links -->
-        <h5 class="text-uppercase">Links</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">Link 1</a>
-          </li>
-          <li>
-            <a href="#!">Link 2</a>
-          </li>
-          <li>
-            <a href="#!">Link 3</a>
-          </li>
-          <li>
-            <a href="#!">Link 4</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
     </div>
     <!-- Grid row -->
 
@@ -596,16 +597,20 @@
   <!-- Footer Links -->
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  <div class="footer-copyright text-center py-3">© 2020 Copyright: Carpenter Realtors, Inc. All rights reserved.
+    <p href="https://mdbootstrap.com/"> Built by The Freemind Co.</p>
   </div>
   <!-- Copyright -->
-
 </footer>
 <!-- Footer -->
-
   </footer>
-  
-  
+  <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
   </body>
 </html>
