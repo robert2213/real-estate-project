@@ -19,8 +19,64 @@
 }
 
 .agent-contact-card-wrapper {
-    float: right;
+    position: relative;
+    left: 820px;
+    top: -340px;
+}
+
+.carousel-inner {
+    width: 1400px;
+    padding-left: 200px;
+    margin-bottom: 340px;
+    top: -150px;
+}
+
+.add-testimonial {
+    padding-left: 200px;
+    padding-right: 200px;
     
 }
 
- 
+.form-button{
+    padding-top: 20px;
+    padding-left: 600px;
+    
+}
+
+.search-homes {
+    padding-top: 200px;
+    padding-right: 200px;
+}
+
+.search-form {
+    padding-top: 90px;
+}
+
+.sort-options {
+    padding-bottom: 30px;
+} 
+
+.radius-search {
+    padding-bottom: 30px;
+}
+
+.search-textbox {
+    padding-bottom: 20px;
+}
+
+#formControlRange {
+    padding-bottom: 20px;
+}
+
+.min-price-input {
+    padding-bottom: 20px;
+}
+
+.max-price-input {
+    padding-bottom: 20px;
+}
+
+.mls-input {
+    padding-bottom: 20px;
+}
+
