@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="real estate.css">
     <title>Julie Norris</title>
   </head>
-  <body>
+  <body style="margin: 0";>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark default-color">
       <a class="navbar-brand" href="#">Jule Norris</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,12 +21,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">About</a>
-          <a class="nav-item nav-link" href="#">Testimonials</a>
-          <a class="nav-item nav-link" href="#">Sold</a>
-          <a class="nav-item nav-link " href="#">Buyers</a>
-          <a class="nav-item nav-link " href="#">Sellers</a>
-          <a class="nav-item nav-link" href="#">Relocation Services</a>
+          <a class="nav-item nav-link active" href="#about">About</a>
+          <a class="nav-item nav-link" href="#active">Active Listings</a>
+          <a class="nav-item nav-link" href="#search">Search Homes</a>
+          <a class="nav-item nav-link " href="#sold">Sold Listings</a>
+          <a class="nav-item nav-link" href="#relocate">Relocation Services</a>
         </div>
       </div>
     </nav>
@@ -39,16 +38,48 @@
               <p class="mx-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
                 optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos. Odit sed qui, dolorum!
               </p>
-              <a class="btn btn-outline-white btn-md"><i class="fas fa-clone left"></i> View project</a>
+              <button type="button" class="btn aqua-gradient" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open
+                modal for @getbootstrap</button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="md-form">
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="md-form">
+                          <textarea type="text" id="message-text" class="form-control md-textarea" rows="3"></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      <!--Modal-->
+      
+
 <!--Agent Info-->
-  <section class="agent-intro-section">
+  <section class="agent-intro-section" id="about">
     <div class="container flex mt-5 mb-5">
       <div class="row">
+        <h1 class="home-search-text">Find Your Next Home</h1>
         <div class="home-search d-flex flex-row">
           <div class="category-button">
               <button class="btn aqua-gradient  dropdown-toggle mr-4" type="button" data-toggle="dropdown"
@@ -136,7 +167,7 @@
   </section>
 
   <!--Listing-->
-  <h1 class="listing-header">Active Listings</h1>
+  <h1 class="listing-header" id="active">Active Listings</h1>
 
     <section class="listing mt-5">
         <!--Carousel Wrapper-->
@@ -223,7 +254,7 @@
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
             </div>
             <div class="form-button">
-              <button class="btn btn-primary">
+              <button class="btn aqua-gradient">
                 Submit
               </button>
             </div>
@@ -234,7 +265,7 @@
     </section >
 
   <!--Search Homes-->
-    <section class="search-homes">
+    <section class="search-homes" id="search">
       <h1 class="search-homes-header ">Search Homes</h1>
       <div class="container">
         <div class="row">
@@ -295,7 +326,7 @@
               </div>
             </form>
           </div>
-          <div class="min-price-input">
+          <div class="min-price-input aqua">
             <label for="exampleForm2">Min Price:</label>
             <input type="text" id="exampleForm2" class="form-control">
           </div>
@@ -324,7 +355,7 @@
           </div>
           <div class="type-dropdown">
             <h3>Type:</h3>
-            <button class="btn btn-primary dropdown-toggle mr-4" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Default Selected</button>
+            <button class="btn aqua-gradient dropdown-toggle mr-4" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Default Selected</button>
               <div class="dropdown-menu">
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
@@ -373,7 +404,7 @@
           </div>
           <div class="default-selector">
             <h3>Status :</h3>
-            <button class="btn btn-primary dropdown-toggle mr-4" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Default Selected</button>
+            <button class="btn aqua-gradient dropdown-toggle mr-4" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Default Selected</button>
               <div class="dropdown-menu">
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="defaultIndeterminate2" checked>
@@ -420,7 +451,7 @@
     </section>
 
   <!--Sold Listings-->
-    <section class="sold-listings">
+    <section class="sold-listings" id="sold">
       <h1 class="sold-listings-header">Sold Listings</h1>
       <div class="">
         <div class="row">
@@ -501,7 +532,7 @@
     </section>
 
   <!--Relocation Services-->
-    <section class="relocation-services mt-5 mb-5">
+    <section class="relocation-services mt-5 mb-5" id="relocate">
       <div class="container">
         <div class="row">
           <div class="relocation-info">
